@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key events</title>
+  </head>
+  <body>
+    <div id="form">
+      <h1>Key Events</h1>
+
+      <p>key DOWN</p>
+      <input type="text" id="down" />
+
+      <p>key UP</p>
+      <input type="text" id="up" />
+
+      <p>key PRESS</p>
+      <input type="text" id="press" />
+    </div>
+    <script>
+      // let keyEvent1 = document.getElementById("down");
+      // keyEvent1.addEventListener("keydown", function (e) {
+      //   // alert(this.value);
+      //   // document.getElementById("form").style.backgroundColor = this.value;
+      //   console.log(e.key, e.keyCode);
+      // });
+      // let keyEvent2 = document.getElementById("up");
+      // keyEvent2.addEventListener("keyup", function (e) {
+      //   // alert(this.value);
+      //   // document.getElementById("form").style.backgroundColor = this.value;
+      //   console.log(e.key, e.keyCode);
+      // });
+      // let keyEvent3 = document.getElementById("press");
+      // keyEvent3.addEventListener("keypress", function (e) {
+      //   // alert(this.value);/
+      //   // document.getElementById("form").style.backgroundColor = this.value;
+      //   console.log(e.key, e.keyCode);
+      // });
+
+      document.addEventListener("keyup", (e) => {
+        if (e.key == "s" && e.ctrlKey) {
+          e.preventDefault();
+          alert("welcome!");
+          console.log(e.key);
+        }
+      });
+    </script>
+  </body>
+</html>

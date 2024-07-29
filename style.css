@@ -1,0 +1,41 @@
+#demo {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+
+.demo1 {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+
+section {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+
+#querySelector {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+
+.querySelectors {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+
+#querySelectorAll {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+
+.querySelectorsAll {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}

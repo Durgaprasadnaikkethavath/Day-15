@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./style.css" rel="stylesheet" /> -->
+    <title>Events</title>
+  </head>
+  <style>
+    /* #event {
+    } */
+  </style>
+  <body>
+    <button onclick="show()">onClick event</button>
+    <p id="show"></p>
+    <p id="event">addEventListener()</p>
+
+    <script>
+      console.log("welcome events & DOMselector Class");
+
+      // onClick event
+
+      function show() {
+        document.getElementById("show").innerHTML =
+          "This is Event of onClick Event";
+        // console.log("This is Event of onClick Event");
+      }
+
+      // addEventListener()
+
+      addEventListener("mouseover", () => {
+        document.getElementById("event").style.backgroundColor = "green";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>DOM Selectors</title>
+  </head>
+  <body>
+    <h1>Accessing Elements in DOM</h1>
+    <span>This is span Tag</span>
+
+    <h1>ID (#demo)</h1>
+    <p id="demo">access me by ID</p>
+
+    <h1>CLASS (.demo1)</h1>
+    <p class="demo1">access me by class1</p>
+    <p class="demo1">access me by class2</p>
+
+    <h1>Tag Section</h1>
+    <section>access me by section()</section>
+
+    <h1>Query Selector</h1>
+    <p id="querySelector">access me by ID in querySelector()</p>
+    <p class="querySelectors">access me by CLASS in querySelector1()</p>
+    <p class="querySelectors">access me by CLASS in querySelector2()</p>
+
+    <h1>Query Selector ALL</h1>
+    <p id="querySelectorAll">access me by ID in querySelectorAll()</p>
+    <p class="querySelectorsAll">access me by CLASS in querySelectorAll1()</p>
+    <p class="querySelectorsAll">access me by CLASS in querySelectorAll2()</p>
+    <script>
+      // ID
+      let demo = document.getElementById("demo");
+      demo.style.border = "2px solid red";
+
+      // class
+      let demo1 = document.getElementsByClassName("demo1");
+      // demo1[0].style.border = "2px solid red";
+      for (let i = 0; i < demo1.length; i++) {
+        demo1[i].style.border = "2px solid purple";
+      }
+
+      // tagname
+      let section = document.getElementsByTagName("section");
+      // section[0].style.border = "2px solid green";
+      for (let i = 0; i < section.length; i++) {
+        section[i].style.border = "2px solid green";
+      }
+
+      // query selector
+      let query = document.querySelector("#querySelector");
+      query.style.border = "2px solid yellow";
+
+      let querySelector = document.querySelector(".querySelectors");
+      querySelector.style.border = "2px solid blue";
+
+      // query selector all
+
+      //ID
+      let querySelectorAll = document.querySelectorAll("#querySelectorAll");
+      // querySelectorAll[0].style.border = "2px solid brown";
+
+      for (let i = 0; i < querySelectorAll.length; i++) {
+        querySelectorAll[i].style.border = "2px solid orange";
+      }
+
+      // Class
+      let querySelectorAll1 = document.querySelectorAll(".querySelectorsAll");
+      // querySelectorAll1[0].style.border = "2px solid brown";
+
+      for (let i = 0; i < querySelectorAll1.length; i++) {
+        querySelectorAll1[i].style.border = "2px solid pink";
+      }
+    </script>
+  </body>
+</html>
